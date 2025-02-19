@@ -16,11 +16,28 @@
             padding: 0.2em 0.4em;
             border-radius: 0.2em;
         }
+        .rotating-image {
+            width: 220px; 
+            height: 200px;
+            animation: spin 10s linear infinite; 
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="display-4 text-center mb-5">תיעוד API - Toys Market</h1>
+        <h1 class="display-4 text-center mb-5"> API - Toys Market</h1>
+        <h1 class="display-4 text-center mb-5">OMER NAGAR</h1>
+        <div class="text-center mb-5">
+            <img src="/img/photo.png" alt="Rotating Image" class="rotating-image">
+        </div>
 
         <div class="mb-5">
             <h2 class="h3">ניהול משתמשים</h2>
@@ -146,16 +163,17 @@
                         <strong>נקודת קצה</strong>: <span class="endpoint">POST /toys</span><br>
                         <strong>תיאור</strong>: יצירת צעצוע חדש.<br>
                         <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`.<br>
-                        <strong>גוף הבקשה</strong>                        <pre><code>
-                            {
-                                "name": "string",
-                                "info": "string",
-                                "category": "string",
-                                "img_url": "string",
-                                "price": "nubmer"
-                            }
-                                                    </code></pre>
-                            <br>
+                        <strong>גוף הבקשה</strong>
+                        <pre><code>
+{
+    "name": "string",
+    "info": "string",
+    "category": "string",
+    "img_url": "string",
+    "price": "number"
+}
+                        </code></pre>
+                        <br>
                         <strong>תגובה</strong>:
                         <ul>
                             <li><strong>201 Created</strong>: צעצוע נוצר בהצלחה.</li>
