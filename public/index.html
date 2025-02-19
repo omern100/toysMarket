@@ -51,7 +51,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">רישום משתמש חדש</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">POST /users</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">POST /users</span><br>
                         <strong>תיאור</strong>: רישום משתמש חדש.<br>
                         <strong>גוף הבקשה</strong>:
                         <pre><code>
@@ -75,7 +75,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">התחברות משתמש</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">POST /users/login</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">POST /users/login</span><br>
                         <strong>תיאור</strong>: אימות משתמש וקבלת טוקן JWT.<br>
                         <strong>גוף הבקשה</strong>:
                         <pre><code>
@@ -97,7 +97,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת כל המשתמשים</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /users</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /users</span><br>
                         <strong>תיאור</strong>: קבלת רשימת כל המשתמשים (מותר רק לאדמינים).<br>
                         <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`.<br>
                         <strong>תגובה</strong>:
@@ -117,9 +117,9 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת כל הצעצועים</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys</span><br>
                         <strong>תיאור</strong>: קבלת כל הצעצועים עם פגינציה.<br>
-                        <strong>פרמטרי שאילתא</strong>:
+                        <strong>משתני שאילתא</strong>:
                         <ul>
                             <li><code>skip</code>: מספר, ברירת מחדל ל-0</li>
                             <li><code>limit</code>: מספר, ברירת מחדל ל-10</li>
@@ -133,9 +133,9 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">חיפוש צעצועים</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys/search</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys/search</span><br>
                         <strong>תיאור</strong>: חיפוש צעצועים לפי מחרוזת חיפוש.<br>
-                        <strong>פרמטרי שאילתא</strong>:
+                        <strong>משתני שאילתא</strong>:
                         <ul>
                             <li><code>s</code>: מחרוזת חיפוש</li>
                             <li><code>skip</code>: מספר, ברירת מחדל ל-0</li>
@@ -149,7 +149,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת צעצועים לפי קטגוריה</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys/category/:catname</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys/category/:catname</span><br>
                         <strong>תיאור</strong>: קבלת צעצועים לפי קטגוריה.<br>
                         <strong>פרמטרים</strong>:
                         <ul>
@@ -165,7 +165,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">יצירת צעצוע חדש</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">POST /toys</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">POST /toys</span><br>
                         <strong>תיאור</strong>: יצירת צעצוע חדש.<br>
                         <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`.<br>
                         <strong>גוף הבקשה</strong>
@@ -192,7 +192,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">עדכון צעצוע</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">PUT /toys/:id</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">PUT /toys/:id</span><br>
                         <strong>תיאור</strong>: עדכון צעצוע קיים.<br>
                         <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`, והבעלות על הצעצוע.<br>
                         <strong>פרמטרים</strong>:
@@ -214,7 +214,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">מחיקת צעצוע</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">DELETE /toys/:id</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">DELETE /toys/:id</span><br>
                         <strong>תיאור</strong>: מחיקת צעצוע.<br>
                         <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`, והבעלות על הצעצוע.<br>
                         <strong>פרמטרים</strong>:
@@ -235,9 +235,9 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת צעצועים לפי טווח מחירים</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys/prices</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys/prices</span><br>
                         <strong>תיאור</strong>: קבלת צעצועים בטווח מחירים מסוים.<br>
-                        <strong>פרמטרי שאילתא</strong>:
+                        <strong>משתני שאילתא</strong>:
                         <ul>
                             <li><code>min</code>: מחיר מינימלי</li>
                             <li><code>max</code>: מחיר מקסימלי</li>
@@ -252,7 +252,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת צעצוע ספציפי</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys/single/:id</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys/single/:id</span><br>
                         <strong>תיאור</strong>: קבלת מידע על צעצוע ספציפי.<br>
                         <strong>פרמטרים</strong>:
                         <ul>
@@ -271,7 +271,7 @@
                 <div class="card-body">
                     <h3 class="h5 card-title">קבלת מספר הצעצועים</h3>
                     <p class="card-text">
-                        <strong>נקודת קצה</strong>: <span class="endpoint">GET /toys/count</span><br>
+                        <strong>מסלול</strong>: <span class="endpoint">GET /toys/count</span><br>
                         <strong>תיאור</strong>: קבלת ספירה של כל הצעצועים.<br>
                         <strong>תגובה</strong>: JSON עם שדה `count`.
                     </p>
