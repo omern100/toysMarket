@@ -42,7 +42,7 @@
                         </code></pre>
                         <strong>תגובה</strong>:
                         <ul>
-                            <li><strong>201 Created</strong>: משתמש נרשם בהצלחה.</li>
+                            <li><strong>201 Created</strong>: משתמש נרשם בהצלחה, חוזר user-id.</li>
                             <li><strong>400 Bad Request</strong>: מייל כבר קיים או נתונים לא תקפים.</li>
                         </ul>
                     </p>
@@ -145,8 +145,17 @@
                     <p class="card-text">
                         <strong>נקודת קצה</strong>: <span class="endpoint">POST /toys</span><br>
                         <strong>תיאור</strong>: יצירת צעצוע חדש.<br>
-                        <strong>אימות</strong>: דורש טוקן JWT.<br>
-                        <strong>גוף הבקשה</strong>: כל שדות הצעצוע כולל `user_id`.<br>
+                        <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`.<br>
+                        <strong>גוף הבקשה</strong>                        <pre><code>
+                            {
+                                "name": "string",
+                                "info": "string",
+                                "category": "string",
+                                "img_url": "string",
+                                "price": "nubmer"
+                            }
+                                                    </code></pre>
+                            <br>
                         <strong>תגובה</strong>:
                         <ul>
                             <li><strong>201 Created</strong>: צעצוע נוצר בהצלחה.</li>
@@ -162,7 +171,7 @@
                     <p class="card-text">
                         <strong>נקודת קצה</strong>: <span class="endpoint">PUT /toys/:id</span><br>
                         <strong>תיאור</strong>: עדכון צעצוע קיים.<br>
-                        <strong>אימות</strong>: דורש טוקן JWT והבעלות על הצעצוע.<br>
+                        <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`, והבעלות על הצעצוע.<br>
                         <strong>פרמטרים</strong>:
                         <ul>
                             <li><code>:id</code>: מזהה הצעצוע לעדכון</li>
@@ -184,7 +193,7 @@
                     <p class="card-text">
                         <strong>נקודת קצה</strong>: <span class="endpoint">DELETE /toys/:id</span><br>
                         <strong>תיאור</strong>: מחיקת צעצוע.<br>
-                        <strong>אימות</strong>: דורש טוקן JWT והבעלות על הצעצוע.<br>
+                        <strong>אימות</strong>: דורש טוקן JWT בכותרת `x-api-key`, והבעלות על הצעצוע.<br>
                         <strong>פרמטרים</strong>:
                         <ul>
                             <li><code>:id</code>: מזהה הצעצוע למחיקה</li>
