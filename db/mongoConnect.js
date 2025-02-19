@@ -3,7 +3,7 @@ const { config } = require('../config/secret');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.USERDB}:${process.env.PASSDB}@cluster0.lt5mp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, {
+        await mongoose.connect(`mongodb+srv://${process.env.USERDB}:${process.env.PASSDB}@cluster0.lt5mp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
