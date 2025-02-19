@@ -3,7 +3,7 @@ const { config } = require('../config/secret');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.USERDB}:${process.env.PASSDB}@toys.6cjgg.mongodb.net/toys-market?authSource=admin&replicaSet=atlas-12r5ny-shard-0&retryWrites=true&w=majority`, {
+        await mongoose.connect(`mongodb+srv://${process.env.USERDB}:${process.env.PASSDB}@cluster0.lt5mp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
