@@ -4,7 +4,7 @@
 🌐 **כניסה לאתר:** [Toys Market](https://toysmarket.onrender.com/)   
 `⚡ שים לב: בטעינה הראשונה האתר עשוי לקחת כמה שניות להיטען – שווה לחכות! ⏳🚀`
 <br><br>
-![myPhoto](https://github.com/user-attachments/assets/2fe53ca4-b1ba-4958-a901-a5f8dc433e97)
+![myPhoto](https://github.com/user-attachments/assets/2934da73-29cd-42a9-b3bd-49f97cd3c295)
 
 <br><br>
  
