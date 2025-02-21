@@ -119,3 +119,5 @@
 <br><br>
 📩 **ליצירת קשר:**<br>
 - ✉️ **עומר נגר:** [omern100@gmail.com](mailto:omern100@gmail.com)
+- 
+![myPhoto](https://github.com/user-attachments/assets/2fe53ca4-b1ba-4958-a901-a5f8dc433e97)
