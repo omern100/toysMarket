@@ -115,5 +115,5 @@
 ## 🔗 קישורים
 🌐 **כניסה לאתר:** [Toys Market](https://toysmarket.onrender.com/)   
 <br><br>
-📩 **ליצירת קשר:**<br><br>
+📩 **ליצירת קשר:**<br>
 - ✉️ **עומר נגר:** [omern100@gmail.com](mailto:omern100@gmail.com)
