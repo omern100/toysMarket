@@ -3,7 +3,8 @@
 
 🌐 **כניסה לאתר:** [Toys Market](https://toysmarket.onrender.com/)   
 `⚡ שים לב: בטעינה הראשונה האתר עשוי לקחת כמה שניות להיטען – שווה לחכות! ⏳🚀`
-
+<br><br>
+![myPhoto](https://github.com/user-attachments/assets/2fe53ca4-b1ba-4958-a901-a5f8dc433e97)
 
 <br><br>
  
@@ -120,4 +121,3 @@
 📩 **ליצירת קשר:**<br>
 - ✉️ **עומר נגר:** [omern100@gmail.com](mailto:omern100@gmail.com)
 - 
-![myPhoto](https://github.com/user-attachments/assets/2fe53ca4-b1ba-4958-a901-a5f8dc433e97)
